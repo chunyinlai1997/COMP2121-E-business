@@ -1,0 +1,514 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Just a frame made by Willon hahaha | Here is the discription">
+		<meta name="keywords" content="HTML,CSS,PHP,Bootstrap,COMP,Project,polyu,comp,COMP,PolyU,Hong Kong,luxury,LUXTOT00RADE">
+		<meta name="author" content="Willon Lai">
+		<title> HOME | LUXToTRADE COMP2121 Project</title>
+		<link rel="icon" href="images/brand_logo_small_icon.png" >
+		<link rel="stylesheet" href="css/style.css" />
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/scroll.js"></script>
+		<script src="js/waypoints.js"></script>
+		<script src="js/waypoints.min.js"></script>
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/waypoints.css" />
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		<script src="js/validate.js"></script>
+	</head>
+
+	<body>
+		<div class="header" id="header">
+			<section class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="1.5s">
+				<h1>LUXToTRADE</h1>
+			</section>
+			<section class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="1.5s">
+				<h2>ONLINE LUXURY TRADING SYSTEM</h2>
+			</section>
+			<section class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="1.5s">
+			</section>
+		</div>
+
+		<script type="text/javascript">
+			var images = ["header11.jpg", "header8.jpg", "bag2.jpg", "header12.jpg"];
+			$(function () {
+				var i = 0;
+				$(".header").css("background-image", "url(images/" + images[i] + ")");
+				setInterval(function () {
+					i++;
+					if (i == images.length) {
+						i = 0;
+					}
+					$(".header").fadeOut("slow", function () {
+						$(this).css("background-image", "url(images/" + images[i] + ")");
+						$(this).fadeIn("slow");
+					});
+				}, 4000);
+			});
+		</script>
+
+		<nav id="naving" class="navbar fixed-top navbar-expand-lg navbar-light">
+		  <a id="brand" class="navbar-brand scroll activescroll" href="#header"><img alt="brand icon" src="images/brand_logo_black.png" width="128" height="58"></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+   	      	<span class="navbar-toggler-icon"></span>
+  		  </button>
+
+		  <div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+			  <li class="nav-item active" hidden>
+				<a class="nav-link scroll activescroll font-weight-bold" href="#header">HOME<span class="sr-only">(current)</span></a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link scroll activescroll font-weight-bold" href="#carouselExampleIndicators">NEWS</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link scroll activescroll font-weight-bold" href="#section2">SERVICE</a>
+			  </li>
+			  <li class="nav-item">
+					<a class="nav-link scroll activescroll font-weight-bold" href="#section4-1">SELL</a>
+			  </li>
+			  <li class="nav-item">
+					<a class="nav-link scroll activescroll font-weight-bold" href="#section4-2">BUY</a>
+			  </li>
+			  <li class="nav-item">
+					<a class="nav-link scroll activescroll font-weight-bold" href="#section5">MEMBERSHIP</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link scroll activescroll font-weight-bold" href="#section3">CONTACT</a>
+			  </li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<a href="login"><button class="btn-login font-weight-bold">LOGIN</button></a>
+				<a href="register"><button class="btn-register font-weight-bold">SIGN UP</button></a>
+			</ul>
+		  </div>
+		</nav>
+
+		<div class="content" id="content">
+
+			<!-- Section 1 -->
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				  <ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+				  </ol>
+				  <div class="carousel-inner">
+					<div class="carousel-item active">
+					  <img class="d-block w-100" src="images/poster1.png" alt="First slide">
+					  <div class="carousel-caption" style="color: black;">
+					  </div>
+					</div>
+					<div class="carousel-item">
+					  <img class="d-block w-100" src="images/poster4.png" alt="Second slide">
+					  <div class="carousel-caption" style="color: black;">
+
+					  </div>
+					</div>
+					<div class="carousel-item">
+					  <img class="d-block w-100" src="images/poster3.png" alt="Third slide">
+					  <div class="carousel-caption" style="color: black;">
+
+					  </div>
+
+					</div>
+					<div class="carousel-item">
+					  <img class="d-block w-100" src="images/poster2.png" alt="Third slide">
+					  <div class="carousel-caption" style="color: black;">
+					  </div>
+
+					</div>
+				  </div>
+					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+			</div>
+			<!-- Section 2 -->
+			<div id="section2" class="container-fluid">
+				<h1 class="section2-h1">WHY LUXTOTRADE?</h1>
+					<div class="container">
+					 <h2 style="font-size:1.5em;" class="section2-h2 font-weight-bold text-uppercase">We've got what you need!</h2>
+
+					 <hr>
+					 <h2 class="section2-h2 font-weight-bold text-uppercase">The LuxPrime Services</h2>
+					  <div class="row">
+						  <div class="col-12 col-sm-6 col-md-4">
+							<div class="row">
+								<div class="col-sm-10 col-sm-offset-2 text-center">
+									<img class="section2-img-icon" src="images/icon-AUTHENTICITY.png" height="200" width="200" align="middle">
+									<h3 class="section2-h3" style="color:#146eb4;">AUTHENTICITY</h3>
+									<p class="section2-p font-weight-bold">Our experts authenticate every product sold on
+									LUXToTrade. Never need to worry about legit buyers or
+									sellers, we’re in the middle.</p>
+
+								</div>
+							</div>
+						  </div>
+						  <div class="col-12 col-sm-6 col-md-4 text-center">
+							<div class="row">
+							  <div class="col-sm-10 col-sm-offset-1 text-center">
+							  <img class="section2-img-icon" src="images/icon-convenience.png" height="200" width="200" align="middle">
+							  <h3 class="section2-h3" style="color:#60ab59;">CONVENIENCE</h3>
+							  <p class="section2-p font-weight-bold">No need to make any appointment with the buyer/seller.
+								Just need to do your “business” on one single device, and
+								the product/money will go to you automatically.</p>
+								</div>
+							</div>
+						  </div>
+						  <div class="col-12 col-sm-6 col-md-4 text-center">
+							<div class="row">
+							  <div class="col-sm-10 text-center">
+							  <img class="section2-img-icon" src="images/icon-3Dscanning.png" height="200" width="200" align="middle">
+							  <h3 class="section2-h3" style="color:#ecb731;">3D SCANNING</h3>
+							  <p class="section2-p font-weight-bold">Just takes a few photos of the product with your phone,
+							  our system will generate a 3D model of it. Buyer can have a
+							  comprehensive understanding of the product.</p>
+							  </div>
+							</div>
+						  </div>
+				  </div>
+				  <br>
+				  <hr>
+				  <br>
+			  </div>
+			</div>
+			<!-- Section 2 -->
+
+			<div class="parallax" style="background-image: url('images/header6.jpg'); filter:opacity(0.7);">
+				<div class="parallaxword">
+	      	<h3 style="font-weight:900;">We make luxuries much more affordable</h3>
+	    	</div>
+			</div>
+
+			<div id="section4-1" class="container-fluid">
+					<h1 class="section4-h1">SELLING ON LUXTOTRADE</h1>
+					<div class="row" style="margin-top:20px;">
+						<div class="col-12 col-sm-6 col-md-4">
+						<div class="row">
+							<div class="col-sm-10 col-sm-offset-2 text-center">
+								<img class="section4-img" src="images/SELLORBUY-white.png" height="200" width="200" align="middle">
+								<div class="section4-h2" style="text-align:center;">POST</div>
+								<p class="section2-p" style="font-size:1.3em; margin-top:20px; margin-bottom:20px;">Post your item on LuxToTrade. We'll send you a prepaid shipping label to your place so you can send it to us for free. The whole process can be done in 2-3 working days.</p>
+
+							</div>
+						</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-4 text-center">
+						<div class="row">
+							<div class="col-sm-10 col-sm-offset-1 text-center">
+							<img class="section4-img" src="images/AUTHENTICITY2-white.png" height="200" width="200" align="middle">
+							<div class="section4-h2" style="text-align:center;">AUTHENTICATE</div>
+							<p class="section2-p" style="font-size:1.3em; margin-top:20px; margin-bottom:20px;">Ship your item within 2 business day after the buyer purchase. We authenticate it and store it in our warehouse.</p>
+							</div>
+						</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-4 text-center">
+						<div class="row">
+							<div class="col-sm-10 text-center">
+							<img class="section4-img" src="images/MONEY-white.png" height="200" width="200" align="middle">
+							<div class="section4-h2" style="text-align:center;">PROSPER</div>
+							<p class="section2-p" style="font-size:1.3em; margin-top:20px; margin-bottom:20px;">When the buyer make an order on your products, we'll immediately send your item to the buyer and you'll immediately receive the earning paid by the buyer.</p>
+							</div>
+						</div>
+						</div>
+				</div>
+			</div>
+
+			<div class="parallax" style="background-image: url('images/header7.jpg'); filter:opacity(0.7);">
+				<div class="parallaxword">
+					<h3 style="font-weight:900;">You Get to Experience the Thrill of the Hunt</h3>
+				</div>
+			</div>
+
+			<div id="section4-2" class="container-fluid">
+					<h1 class="section4-h1">BUYING ON LUXTOTRADE</h1>
+					<div class="row" style="margin-top:20px;">
+						<div class="col-12 col-sm-6 col-md-4">
+						<div class="row">
+							<div class="col-sm-10 col-sm-offset-2 text-center">
+								<img class="section4-img" src="images/SELLORBUY-white.png" height="200" width="200" align="middle">
+								<div class="section4-h2" style="text-align:center;">ORDER</div>
+								<p class="section2-p" style="font-size:1.3em; margin-top:20px; margin-bottom:20px;">Checkout and pay in anytime. You can also subscribe CLEAN & REPAIR Service to renew your products.</p>
+
+							</div>
+						</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-4 text-center">
+						<div class="row">
+							<div class="col-sm-10 col-sm-offset-1 text-center">
+							<img class="section4-img" src="images/MONEY-white.png" height="200" width="200" align="middle">
+							<div class="section4-h2" style="text-align:center;">PAY</div>
+							<p class="section2-p" style="font-size:1.3em; margin-top:20px; margin-bottom:20px;">After payment is completed, we will send you the products immediately. We assure the transaction fee is fixed and we provide fast and low-priced shipping service for you.
+							</p>
+							</div>
+						</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-4 text-center">
+						<div class="row">
+							<div class="col-sm-10 text-center">
+							<img class="section4-img" src="images/PRODUCT-white.png" height="200" width="200" align="middle">
+							<div class="section4-h2" style="text-align:center;">DELIVER</div>
+							<p class="section2-p" style="font-size:1.3em; margin-top:20px; margin-bottom:20px;">After you received the product from us, should you check
+								the product and Confirm with us, if there is no
+								problem about the product. It’s all done, just that easy!</p>
+							</div>
+						</div>
+						</div>
+				</div>
+			</div>
+
+			<div class="parallax" style="background-image: url('images/header10.jpg');  filter:opacity(0.7);">
+				<div class="parallaxword">
+					<h3 style="font-weight:900;">Inspire to Recycle</h3>
+				</div>
+			</div>
+
+			<div id="section5" class="container-fluid">
+				<h1 class="section5-h1 text-uppercase">Membership</h1>
+				<div class="container py-4">
+					<div class="row">
+						<div class="col-md-10 my-4 mx-auto">
+							<h2 class="section5-h2 text-uppercase font-weight-bold">What We Provide</h2>
+							<hr>
+							<div class="row no-gutters">
+								<div class="col-md-6 pr-2">
+									<div class="list-group text-center">
+										<div href="#" class="list-group-item text-white" style="background-color:#a71930;">
+											<h5 class="text-center text-uppercase font-weight-bold my-2">Standard<br></h5>
+										</div>
+										<div class="list-group-item text-uppercase font-weight-bold">
+											FREE
+										</div>
+										<div class="list-group-item">
+											1 Item Space
+										</div>
+										<div class="list-group-item">
+											Standard Listing
+										</div>
+										<div class="list-group-item">
+											Standard Service Fee
+										</div>
+										<div class="list-group-item">
+											Standard Shipping Fee
+										</div>
+										<div class="list-group-item">
+											Standard Storage Fee
+										</div>
+										<div class="list-group-item">
+											Standard Quality Proof Service
+										</div>
+										<div class="list-group-item">
+											Pop-up and banner Ads
+										</div>
+										<div class="list-group-item bg-inverse">
+											<a href="register.php"><button class="btn btn-secondary btn-lg btn-block text-truncate">Sign up now</button></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 pl-2">
+									<div class="list-group text-center">
+										<div class="list-group-item text-white" style="background-color:#dbc65d;">
+											<h5 class="text-center text-uppercase font-weight-bold my-2">Premium</h5>
+										</div>
+										<div class="list-group-item text-uppercase font-weight-bold">
+											$29.99HKD/30 Days
+										</div>
+										<div class="list-group-item font-weight-bold">
+											Unlimited Item Spaces
+										</div>
+										<div class="list-group-item font-weight-bold">
+											Frequent & Top Listing
+										</div>
+										<div class="list-group-item font-weight-bold">
+											Free Quality Proof Service
+										</div>
+										<div class="list-group-item font-weight-bold">
+											Service Fee  50% Off
+										</div>
+										<div class="list-group-item font-weight-bold">
+											Shipping Fee 50% Off
+										</div>
+										<div class="list-group-item font-weight-bold">
+											Storage Fee 50% Off
+										</div>
+										<div class="list-group-item font-weight-bold">
+											Auto Advertising
+										</div>
+										<div class="list-group-item font-weight-bold">
+											No Ads
+										</div>
+										<div class="list-group-item">
+											<a href="register.php#premium"><button class="btn btn-secondary btn-lg btn-block text-truncate">Get it now</button></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<hr>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="parallax" style="background-image: url('images/header2.jpg');  filter:opacity(0.7);">
+				<div class="parallaxword">
+					<h3 style="color:black; font-weight:900;">Spot product Quality helps you purchase wisely</h3>
+				</div>
+			</div>
+
+			<section class="contact-1" id="section3" style="font-family: Lato-Hairline;">
+			</br>
+			<h1 class="section3-h1">CONTACT</h1>
+			<div class="container">
+				<div class="row contact-details">
+					<div class="col-sm-8 text-center text-md-left mb-4">
+						<h3 class="font-weight-bold">Ask us a question</h3>
+						<form class="contact-form mt-4">
+							<div class="row">
+								<div class="col-md-5">
+									<input type="text" class="form-control-custom mb-4 font-weight-bold" placeholder="Name" value="">
+								</div>
+								<div class="col-md-5">
+									<input type="text" class="form-control-custom mb-4 font-weight-bold" placeholder="Email address" value="">
+								</div>
+								<br />
+							</div>
+							<div class="row">
+								<div class="col-md-10">
+									<textarea class="form-control-custom mb-4 font-weight-bold" rows="5" placeholder="Message"></textarea><br />
+									<button type="submit" class="btn btn-primary btn-lg mb-4 font-weight-bold" style="background-color:white; color:black; font-size:15px; border:0px; margin:0px;">Send Message</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-sm-4 text-center text-md-left">
+						<h3 class="font-weight-bold">Contact</h3>
+						<h4 class="pt-4 font-weight-bold">Email</h4>
+						<p>info@luxtotrade.com</p>
+						<h4 class="pt-2 font-weight-bold">Phone</h4>
+						<p>+852 2888 2888</p>
+						<h4 class="pt-2 font-weight-bold">Address</h4>
+						<p>The Hong Kong Polytechnic University</br>
+							Hung Hom, Kowloon, Hong Kong</p>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+<!--
+			<div id="map"></div>
+			<script>
+			function initMap() {
+				var myLatLng = {lat: 22.302937 , lng:  114.178451,};
+				var map = new google.maps.Map(document.getElementById('map'), {
+				  zoom: 17,
+				  center: myLatLng,
+				  disableDefaultUI: true
+				});
+
+				var marker = new google.maps.Marker({
+				  position: myLatLng,
+				  map: map,
+				  title: 'Hello World!'
+				});
+			  }
+			</script>
+			<script async defer
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLZsnuumGUJMP07RAhSrly-wSezRXi19U&callback=initMap">
+			</script>
+-->
+		<footer class="footer-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-2 text-center text-md-left">
+						<a class="logo" style="padding-right:80px; padding-left:40px;" href="#"><img alt="brand
+							" src="images/brand_logo_white.png" width="128" height="58"></a>
+					</div>
+					<div class="col-12 col-sm-12 col-md-10">
+						<div class="row">
+							<div class="col-4">
+								<a class="nav-link scroll activescroll" style="color:#fff" href="#carouselExampleIndicators">NEWS</a>
+							</div>
+							<div class="col-4">
+								<a class="nav-link scroll activescroll" style="color:#fff" href="#section2">SERVICE</a>
+							</div>
+							<div class="col-4">
+								<a class="nav-link scroll activescroll" style="color:#fff" href="#section4-1">SELL</a>
+							</div>
+							<div class="col-4">
+								<a class="nav-link scroll activescroll" style="color:#fff" href="#section4-2">BUY</a>
+							</div>
+							<div class="col-4">
+								<a class="nav-link scroll activescroll" style="color:#fff" href="#section5">MEMBERSHIP</a>
+							</div>
+							<div class="col-4">
+								<a class="nav-link scroll activescroll" style="color:#fff" href="#section3">CONTACT</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<footer class="footer-4">
+			<div class="container-fluid">
+				<div class="divider"></div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 text-center text-md-left mt-2 mb-3 pt-1">
+						<p class="copyright">Copyright &copy; LuxToTrade, a company of Tangible. All rights reserved.</p>
+					</div>
+					<div class="col-md-6 text-center text-md-right mb-4">
+						<ul class="social">
+							<li><a href="#" title="Facebook" class="fa fa-facebook"></a></li>
+							<li><a href="#" title="Twitter" class="fa fa-twitter"></a></li>
+							<li><a href="#" title="Google+" class="fa fa-google"></a></li>
+							<li><a href="#" title="Dribbble" class="fa fa-dribbble"></a></li>
+							<li><a href="#" title="Instagram" class="fa fa-instagram"></a></li>
+							<div class="clear"></div>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--<a href="#" class="scrollToTop"><img src="images/up.png" width="30" height="30"/></a>
+		<script>
+
+		$(document).ready(function(){
+			//Check to see if the window is top if not then display button
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 100) {
+					$('.scrollToTop').fadeIn();
+				} else {
+					$('.scrollToTop').fadeOut();
+				}
+			});
+
+			//Click event to scroll to top
+			$('.scrollToTop').click(function(){
+				$('html, body').animate({scrollTop : 0},800);
+				return false;
+			});
+
+		});
+		</script>-->
+	</body>
+</html>
